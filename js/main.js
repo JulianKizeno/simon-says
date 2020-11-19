@@ -12,6 +12,7 @@ const pink = document.getElementById('pink')
 const burlywood = document.getElementById('burlywood')
 const gold = document.getElementById('gold')
 
+const btnStart = document.getElementById('btnStart')
 
 class Game {
     constructor() {
@@ -19,7 +20,7 @@ class Game {
     }
 
     starting() {
-        
+        btnStart.classList.add('hide')
     }
 
 }
