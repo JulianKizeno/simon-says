@@ -17,14 +17,34 @@ const btnStart = document.getElementById('btnStart')
 class Game {
     constructor() {
         this.starting()
+        this.generateSequence()
     }
 
     starting() {
         btnStart.classList.add('hide')
+        this.level = 1
+        this.colors = {
+            celeste,
+            violet,
+            oranje,
+            green,
+            yellow,
+            blue,
+            red,
+            grey,
+            salmon,
+            pink,
+            burlywood,
+            gold
+        }
+    }
+
+    generateSequence(){
+        this.sequence = new Array(10).fill(0).map(n => Math.floor(Math.random() * 11))
     }
 
 }
 
 function startTheGame(){
-    let game = new Game()
+    window.game = new Game()
 }
