@@ -81,15 +81,23 @@ html{
 }
 
 .btn-start {
-    width: 400px;
+    width: 500px;
     height: 100px;
     background: #ecf0f1;
     color: #2c3e50;
     font-size: 2.5rem;
     position: absolute;
     top: calc(50% - 50px);
-    left: calc(50% - 200px);
-  }
+    left: calc(45% - 195px);
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+}
+
+.hide {
+    display: none;
+}
+
 
 @media(max-width: 800px){
     .color{
