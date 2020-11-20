@@ -18,6 +18,7 @@ const lastLevel = 20
 
 class Game {
     constructor() {
+        this.starting = this.starting.bind(this)
         this.starting()
         this.generateSequence()
         setTimeout(this.nextLevel, 300)
@@ -26,7 +27,7 @@ class Game {
     starting() {
         this.nextLevel = this.nextLevel.bind(this)
         this.chooseColor = this.chooseColor.bind(this)
-        btnStart.classList.add('hide')
+        this.toggleBtnStart()
         this.level = 1
         this.colors = {
             celeste,
@@ -42,6 +43,14 @@ class Game {
             burlywood,
             gold
         }
+    }
+
+    toggleBtnStart(){
+        btnStart.classList.contains('hide')
+        ?
+        btnStart.classList.remove('hide')
+        :
+        btnStart.classList.add('hide')
     }
 
     generateSequence(){
@@ -168,15 +177,40 @@ class Game {
                 this.level++
                 this.removeClickEvent()
                 if(this.level === (lastLevel + 1)){
-                    // you win
+                    this.youWinTheGame()
                 }else{
                     setTimeout(this.nextLevel, 1000)
                 }
 
             }
         }else{
-            // you lose
+            this.youLoseTheGame()
         }
+    }
+
+    youWinTheGame(){
+        Swal.fire({
+            icon: 'success',
+            title: 'Simon says...',
+            text: 'We have a Winner!!',
+            confirmButtonText: 'Try again ',
+            confirmButtonColor: '#5ea9e4'
+        }) 
+        .then(this.starting)
+    }
+
+    youLoseTheGame(){
+        Swal.fire({
+            icon: 'error',
+            title: 'Simon says...',
+            text: 'Looooseeeerr!!!',
+            confirmButtonText: 'Try again ',
+            confirmButtonColor: '#5ea9e4'
+        })
+        .then(() => {
+            this.removeClickEvent()
+            this.starting()
+        })
     }
 
 }
