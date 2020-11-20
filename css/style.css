@@ -5,7 +5,7 @@
 }
 
 .celeste {
-  background: black;
+  background: #22a6b3;
 }
 
 .celeste.light {
@@ -44,7 +44,7 @@
 }
 
 .yellow.light {
-  background: #ffffe0;
+  background: #ffff92;
 }
 
 .blue {
@@ -103,21 +103,28 @@
 }
 
 .gold.light {
-  background: #fafad2;
+  background: #ecec8e;
 }
 
 .btn-start {
   width: 50rem;
-  height: 10rem;
-  background: #ecf0f1;
-  color: #2c3e50;
+  height: 12rem;
+  background: #5ea9e4;
+  color: #fff0f0;
   font-size: 2.5rem;
   position: absolute;
-  top: calc(50% - 5rem);
-  left: calc(45% - 19.5rem);
-  border-radius: 2rem;
+  top: calc(50% - 6rem);
+  left: calc(50% - 25rem);
+  border-radius: 7rem;
   outline: none;
   border: none;
+}
+
+.btn-start:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #dfe1e500;
+  background-color: #51b2ff;
+  font-weight: 600;
 }
 
 .hide {
@@ -161,6 +168,16 @@ html {
   .gameboard {
     max-width: 50rem;
   }
+
+  .btn-start {
+    width: 34rem;
+    height: 9rem;
+    font-size: 1.7rem;
+    top: calc(50% - 6rem);
+    left: calc(50% - 25rem);
+    top: calc(50% - 4.5rem);
+    left: calc(50% - 17rem);
+  }
 }
 @media (max-width: 500px) {
   .color {
@@ -171,6 +188,15 @@ html {
 
   .gameboard {
     max-width: 33rem;
+  }
+
+  .btn-start {
+    width: 14rem;
+    height: 14rem;
+    font-size: 1.7rem;
+    top: calc(50% - 6.5rem);
+    left: calc(50% - 7rem);
+    border-radius: 5rem;
   }
 }
 

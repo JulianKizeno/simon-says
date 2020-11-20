@@ -38,6 +38,15 @@ html {
     .gameboard{
         max-width: 50rem;
     }
+    .btn-start{
+        width: 34rem;
+        height: 9rem;
+        font-size: 1.7rem;
+        top: calc(50% - 6rem);
+        left: calc(50% - 25rem);
+        top: calc(50% - 4.5rem);
+        left: calc(50% - 17rem);
+    }
 }
 
 @media(max-width: 500px){
@@ -48,6 +57,14 @@ html {
     }
     .gameboard{
         max-width: 33rem;
+    }
+    .btn-start {
+        width: 14rem;
+        height: 14rem;
+        font-size: 1.7rem;
+        top: calc(50% - 6.5rem);
+        left: calc(50% - 7rem);
+        border-radius: 5rem;
     }
 }
 
