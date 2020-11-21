@@ -16,6 +16,16 @@ const btnStart = document.getElementById('btnStart')
 
 const lastLevel = 15
 
+Swal.fire({
+    title: 'Simon Says',
+    text: "This game consists of clicking on the sequence of colors that light up each time. You have 15 levels to finish. Let's see how much retention you have. Can you make it?",
+    confirmButtonText: 'GO!!',
+    confirmButtonColor: '#5ea9e4',
+    allowOutsideClick: false,
+    allowScapeKey: false,
+    allowEnterKey: false
+})
+
 class Game {
     constructor() {
         this.starting = this.starting.bind(this)
