@@ -14,7 +14,7 @@ const gold = document.getElementById('gold')
 
 const btnStart = document.getElementById('btnStart')
 
-const lastLevel = 20
+const lastLevel = 15
 
 class Game {
     constructor() {
