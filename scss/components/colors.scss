@@ -1,9 +1,7 @@
-$br_rad: 50%;
 
 .color {
-    width: 15rem;
-    height: 15rem;
-    margin: .5rem;
+    width: 16rem;
+    height: 16rem;
 }
 
 .celeste {
@@ -17,7 +15,6 @@ $br_rad: 50%;
 
 .violet {
     background: #be2edd;
-    border-radius: $br_rad;
 }
 
 .violet.light {
@@ -34,7 +31,6 @@ $br_rad: 50%;
 
 .green {
     background: #6ab04c;
-    border-radius: $br_rad;
 }
 
 .green.light{
@@ -43,11 +39,10 @@ $br_rad: 50%;
 
 .yellow {
     background: #ffff00;
-    border-radius: $br_rad;
 }
 
 .yellow.light {
-    background:#ffff92;
+    background:#f9f9a0;
 }
 
 .blue {
@@ -60,7 +55,6 @@ $br_rad: 50%;
 
 .red {
     background: #ff0000;
-    border-radius: $br_rad;
 }
 
 .red.light {
@@ -85,7 +79,6 @@ $br_rad: 50%;
 
 .pink {
     background: #fc94a5;
-    border-radius: $br_rad;
 }
 
 .pink.light {
@@ -102,7 +95,6 @@ $br_rad: 50%;
 
 .gold {
     background: #ffd700;
-    border-radius: $br_rad;
 }
 
 .gold.light {

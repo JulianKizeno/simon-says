@@ -20,7 +20,7 @@ html {
 .gameboard { 
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -29,14 +29,10 @@ html {
     max-width: 79vh;
 }
 
-@media(max-width: 800px){
-    .color{
-        width: 10rem;
-        height: 10rem;
-    
-    }
-    .gameboard{
-        max-width: 50rem;
+@media(max-width: 1024px){
+    .color {
+        width: 30rem;
+        height: 20rem;
     }
     .btn-start{
         width: 34rem;
@@ -49,22 +45,44 @@ html {
     }
 }
 
+@media(max-width: 800px){
+    .color {
+        width: 16rem;
+        height: 16rem;
+    }
+    
+}
+
 @media(max-width: 500px){
+    .color {
+        width: 18rem;
+        height: 10rem;
+    }
+}
+
+@media(max-width: 400){
+    .color {
+        width: 12rem;
+        height: 13rem;
+    }
+}
+
+@media(max-width: 360px){
     .color{
-        width: 6rem;
-        height: 6rem;
-        margin-right: .2rem;
+        width: 18rem;
+        height: 9rem;
     }
-    .gameboard{
-        max-width: 33rem;
+    .btn-start{
+        width: 20rem;
+        top: calc(50% - 3rem);
+        left: calc(50% - 10rem);
     }
-    .btn-start {
-        width: 14rem;
-        height: 14rem;
-        font-size: 1.7rem;
-        top: calc(50% - 6.5rem);
-        left: calc(50% - 7rem);
-        border-radius: 5rem;
+}
+
+@media(max-width: 320px){
+    .color {
+        width: 15rem;
+        height: 8rem;
     }
 }
 
