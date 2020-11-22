@@ -22,7 +22,7 @@ Swal.fire({
     confirmButtonText: 'GO!!',
     confirmButtonColor: '#5ea9e4',
     allowOutsideClick: false,
-    allowScapeKey: false,
+    allowEscapeKey: false,
     allowEnterKey: false
 })
 
