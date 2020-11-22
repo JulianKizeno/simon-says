@@ -11,7 +11,7 @@
   "scripts": {
     "build": "sass ./scss/style.scss ./css/style.css",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d ./"
   },
   "repository": {
     "type": "git",
