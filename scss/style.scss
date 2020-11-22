@@ -1,5 +1,3 @@
-@import "./components/colors.scss";
-@import "./components/button.scss";
 
 * {
     box-sizing: border-box;
@@ -28,6 +26,9 @@ html {
     max-height: 79vh;
     max-width: 79vh;
 }
+
+@import "./components/colors.scss";
+@import "./components/button.scss";
 
 @media(max-width: 1024px){
     .color {
