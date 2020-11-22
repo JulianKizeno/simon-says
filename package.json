@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "sass ./scss/style.scss ./css/style.css",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo 'juliankizeno.github.io/' > ./css/CNAME ",
     "deploy": "gh-pages -d ./"
   },
   "repository": {
