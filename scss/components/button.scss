@@ -1,0 +1,25 @@
+.btn-start {
+    width: 31rem;
+    height: 10rem;
+    background: #eaf6ff;
+    color: #7d7d7d;
+    position: absolute;
+    top: calc(50% - 5rem);
+    left: calc(50% - 15.5rem);
+    border-radius: 3rem;
+    outline: none;
+    border: none;
+    box-shadow: -4px 4px 7px 2px #21212147;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.btn-start:hover{
+    background-color: #00005a;
+    color: #f5e8e8;
+}
+
+
+.hide {
+    display: none;
+}

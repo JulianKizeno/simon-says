@@ -1,0 +1,208 @@
+.color {
+  width: 16rem;
+  height: 16rem;
+}
+
+.celeste {
+  background: #22a6b3;
+}
+
+.celeste.light {
+  background: #7ed6df;
+}
+
+.violet {
+  background: #be2edd;
+}
+
+.violet.light {
+  background: #e056fd;
+}
+
+.orange {
+  background: #f0932b;
+}
+
+.orange.light {
+  background: #ffbe76;
+}
+
+.green {
+  background: #6ab04c;
+}
+
+.green.light {
+  background: #badc58;
+}
+
+.yellow {
+  background: #ffff00;
+}
+
+.yellow.light {
+  background: #f9f9a0;
+}
+
+.blue {
+  background: #0000ff;
+}
+
+.blue.light {
+  background: #add8e6;
+}
+
+.red {
+  background: #ff0000;
+}
+
+.red.light {
+  background: #ff9f9f;
+}
+
+.grey {
+  background: #808080;
+}
+
+.grey.light {
+  background: #d3d3d3;
+}
+
+.salmon {
+  background: #fa8072;
+}
+
+.salmon.light {
+  background: #ffa07a;
+}
+
+.pink {
+  background: #fc94a5;
+}
+
+.pink.light {
+  background: #ffc1ca;
+}
+
+.burlywood {
+  background: #deb887;
+}
+
+.burlywood.light {
+  background: #f1d7b5;
+}
+
+.gold {
+  background: #ffd700;
+}
+
+.gold.light {
+  background: #ecec8e;
+}
+
+.btn-start {
+  width: 31rem;
+  height: 10rem;
+  background: #eaf6ff;
+  color: #7d7d7d;
+  position: absolute;
+  top: calc(50% - 5rem);
+  left: calc(50% - 15.5rem);
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  box-shadow: -4px 4px 7px 2px #21212147;
+  font-size: large;
+  font-weight: lighter;
+}
+
+.btn-start:hover {
+  background-color: #00005a;
+  color: #f5e8e8;
+}
+
+.hide {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.gameboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  max-height: 79vh;
+  max-width: 79vh;
+}
+
+@media (max-width: 1024px) {
+  .color {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .btn-start {
+    width: 34rem;
+    height: 9rem;
+    font-size: 1.7rem;
+    top: calc(50% - 6rem);
+    left: calc(50% - 25rem);
+    top: calc(50% - 4.5rem);
+    left: calc(50% - 17rem);
+  }
+}
+@media (max-width: 800px) {
+  .color {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+@media (max-width: 500px) {
+  .color {
+    width: 18rem;
+    height: 10rem;
+  }
+}
+@media (max-width: 400) {
+  .color {
+    width: 12rem;
+    height: 13rem;
+  }
+}
+@media (max-width: 360px) {
+  .color {
+    width: 18rem;
+    height: 9rem;
+  }
+
+  .btn-start {
+    width: 20rem;
+    top: calc(50% - 3rem);
+    left: calc(50% - 10rem);
+  }
+}
+@media (max-width: 320px) {
+  .color {
+    width: 15rem;
+    height: 8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

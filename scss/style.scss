@@ -1,0 +1,93 @@
+@import "./components/colors.scss";
+@import "./components/button.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.gameboard { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    max-height: 79vh;
+    max-width: 79vh;
+}
+
+@media(max-width: 1024px){
+    .color {
+        width: 30rem;
+        height: 20rem;
+    }
+    .btn-start{
+        width: 34rem;
+        height: 9rem;
+        font-size: 1.7rem;
+        top: calc(50% - 6rem);
+        left: calc(50% - 25rem);
+        top: calc(50% - 4.5rem);
+        left: calc(50% - 17rem);
+    }
+}
+
+@media(max-width: 800px){
+    .color {
+        width: 16rem;
+        height: 16rem;
+    }
+    
+}
+
+@media(max-width: 500px){
+    .color {
+        width: 18rem;
+        height: 10rem;
+    }
+}
+
+@media(max-width: 400){
+    .color {
+        width: 12rem;
+        height: 13rem;
+    }
+}
+
+@media(max-width: 360px){
+    .color{
+        width: 18rem;
+        height: 9rem;
+    }
+    .btn-start{
+        width: 20rem;
+        top: calc(50% - 3rem);
+        left: calc(50% - 10rem);
+    }
+}
+
+@media(max-width: 320px){
+    .color {
+        width: 15rem;
+        height: 8rem;
+    }
+}
+
+
+
+
+
+
