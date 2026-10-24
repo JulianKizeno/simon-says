@@ -4,7 +4,7 @@
   "description": "follow the light sequence",
   "main": "./js/main.js",
   "dependencies": {
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^6.3.0",
     "sass": "^1.29.0"
   },
   "devDependencies": {},
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/JulianKizeno/simon_says/issues"
   },
-  "homepage": "https://github.com/JulianKizeno/simon_says/"
+  "homepage": "https://github.com/JulianKizeno/simon_says/",
+  "engines": {
+    "node": ">=20.19.0"
+  }
 }
